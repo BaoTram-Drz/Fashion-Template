@@ -1,0 +1,88 @@
+.instagram{
+    margin-top: 2% ;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 3% 18%;
+}
+.ins-header-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ins-image-group{
+    margin: 2% auto;
+    display: flex;
+    overflow: hidden;
+}
+.ins-image{
+    flex: 1; 
+    max-width: 19%; 
+    margin-right: auto;
+    transition: transform 0.5s ease;
+}
+.ins-image:last-child {
+    margin-right: 0; 
+  }
+.ins-prev-button, .ins-next-button {
+    cursor: pointer;
+    position: absolute;
+    padding: 4px;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    font-weight: 100;
+    color: #717171;
+    background-color: white;
+    border: 1px solid #717171;
+    border-radius: 50px;
+    text-align: center;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+
+.ins-prev-button {
+    margin: 5% auto auto -34%;
+}
+  
+.ins-next-button {
+    margin: 5% auto auto 30% ;
+}
+.prev:hover, .next:hover {
+    background-color: #717171;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .instagram{
+        padding: 3% 5%;
+    }
+    .ins-header-text {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .ins-prev-button, .ins-next-button {
+        padding: 2px;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+    .ins-prev-button {
+        margin: 8% auto auto -48%;
+    }
+      
+    .ins-next-button {
+        margin: 8% auto auto 42% ;
+    }
+}
+  
+  /* Tablet */  
+@media (min-width: 768px) and (max-width: 1023px){
+    .ins-prev-button {
+        margin: 5% auto auto -36%;
+    }
+      
+    .ins-next-button {
+        margin: 5% auto auto 29% ;
+    }
+} 

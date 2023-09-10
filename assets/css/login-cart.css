@@ -1,0 +1,25 @@
+.side-bar-modal{
+    z-index: 999;
+}
+.container{
+    position:absolute;
+    width: 20%;
+    height: 100%;
+    margin-left: 80%;
+    margin-right: 0%;
+    padding: 30px;
+    background-color: white;
+}
+.close{
+    width: auto;
+    text-align: right;
+}
+.modal-text-header{
+    font-size: 16px;
+    font-weight: bold;
+}
+.forgot-text{
+    width: 100%;
+    text-align: center;
+    color: black;
+}

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/sub-banner.css">
+    <link rel="stylesheet" href="assets/css/new-products.css">
+    <link rel="stylesheet" href="assets/css/instagram.css">
+    <link rel="stylesheet" href="assets/css//login-cart.css">
+    <link rel="stylesheet" href="assets/css/side-bar.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-message">
+            <span>&#x26A1; SPECIAL OFFER: ENJOY 3 MONTHS OF SHOPIFY FOR <b>$1/MONTH</b></span>
+            <span>&#x26A1; SPECIAL OFFER: ENJOY 3 MONTHS OF SHOPIFY FOR <b>$1/MONTH</b></span>
+            <span>&#x26A1; SPECIAL OFFER: ENJOY 3 MONTHS OF SHOPIFY FOR <b>$1/MONTH</b></span>
+            <span>&#x26A1; SPECIAL OFFER: ENJOY 3 MONTHS OF SHOPIFY FOR <b>$1/MONTH</b></span>
+            <span>&#x26A1; SPECIAL OFFER: ENJOY 3 MONTHS OF SHOPIFY FOR <b>$1/MONTH</b> </span>
+        </div>
+        <div class="header-content">
+            <div class="logo">Drz</div>
+            <div class="header-content-right">
+                <div class="free-shipping"><b>Free shipping on All Orders. No Minimum Purchase</b></div>
+                <div class="top-nav">
+                    <ul>
+                        <li>
+                            <a href="#" id="side-cart">
+                                <i class="fas fa-shopping-bag"></i> Shopping Cart <span
+                                    class="icon icon-pink">&nbsp;0&nbsp;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="far fa-heart"></i> My Wish List</a>
+                        </li>
+                        <li><a href="#" id="signin-btn">Sign in or Create an account</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button onclick="myFunction()" class="dropbtn"><i class="fas fa-caret-down"></i></button>
+        <div id="myMenu" class="menu">
+            <ul>
+                <li><a href="#">New in</a></li>
+                <li><a href="#">Trend</a></li>
+                <li><a href="#">Collections</a>
+                    <i class="fas fa-comment-alt menu-icon-sale">
+                        <span class="menu-icon-text">sale</span></i>
+                </li>
+                <li><a href="#">Lookbook</a></li>
+                <li><a href="#">Demo</a>
+                    <i class="fas fa-comment-alt menu-icon-new">
+                        <span class="menu-icon-text">New</span></i>
+                </li>
+                <li><a href="#">Shop instagram</a>
+                    <i class="fas fa-comment-alt menu-icon-hot"><span class="menu-icon-text">Hot</span></i>
+                </li>
+                <li id="blog">
+                    <a href="#">Blog</a>
+                    <div class="blog-dropdown-content">
+                        <a href="#">Blog Default Layout</a>
+                        <a href="#">Blog with Small Image and Left Sidebar</a>
+                        <a href="#">Blog Mansory</a>
+                        <a href="#">Blog Full-width</a>
+                        <a href="#">Blog Post with LookBook</a>
+                        <a href="#">Blog Post with Product Widget</a>
+                    </div>
+                </li>
+                <li><a href="#">Brand</a></li>
+                <li><a href="#">FAQS</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- login + cart -->
+    <div class="login-modal">
+        <div class="container">
+            <div class="close">
+                <i id="close-login-btn" class="fa fa-times cursor"></i>
+            </div>
+
+            <p class="modal-text-header">Sign In</p>
+            <p class="mgt-20">
+                <b>Email Address</b>
+                <span style="color: red;">*</span>
+            </p>
+            <input id="email" class="input input-white w-100">
+
+            <p class="mgt-15">
+                <b>Password</b>
+                <span style="color: red;">*</span>
+            </p>
+            <input id="password" class="input input-white w-100">
+
+            <div class="mgt-15"><button class="button button-white border-black w-100">LOGIN</button></div>
+
+            <p class="forgot-text mgt-15"><a href="#" class="forgot-text">Forgot your password</a></p>
+            <div class="mgt-25"><button class="button button-black w-100 mgt-25">CREATE ACCOUNT</button></div>
+        </div>
+    </div>
+    <div class="side-cart-modal">
+        <div class="container">
+            <div class="close">
+                <i id="close-cart-btn" class="fa fa-times  cursor"></i>
+            </div>
+            <p class="modal-text-header">Shopping Cart</p>
+
+            <p>3 items</p>
+            <p class="mgt-10">Free shipping for all orders over $800.00!</p>
+            <p class="text-center mgt-25">Your cart is empty</p>
+
+            <div class="mgt-10"><button class="button button-black w-100 mgt-25">CHECKOUT</button></div>
+
+            <button class="button button-nocolor">CHECKOUT</button>
+        </div>
+    </div>
+    <!-- side bar -->
+    <div class="side-bar-modal">
+        <div class="collapsed-container">
+            <a href="#"><i id="history-btn" class="fas fa-history"></i></a>
+            <a href="#"><i id="share-btn" class="fas fa-share-alt"></i></a>
+            <a href="#"><i id="top-recently" class="fas fa-arrow-up"></i></a>
+        </div>
+        <div class="recently-container">
+            <p class="recently-text"><b>RECENTLR</b><b> VIEWED</b></p>
+            <div class="recently-viewed-group">
+                <div id="image-1" class="recently-image"><img src="assets/images/social/recently-1.jpg" alt=""></div>
+                <div id="image-2" class="recently-image">
+                    <img src="assets/images/social/recently-2.jpg" alt="">
+                    <div class="recently-image-hover">
+                        <a href="#"><b>Mango</b></a><br>
+                        <a href="#"><u>Finibus Luctus Nisiteti Long Sleeves - Grey</u></a><br>
+                        <a href="#"><b>$300,00</b></a>
+                    </div>
+                </div>
+                <div id="image-3" class="recently-image"><img src="assets/images/social/recently-3.jpg" alt=""></div>
+            </div>
+            <div class="recently-button">
+                <button id="recently-top" class="recently-top-button">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+                <button id="recently-bottom" class="recently-bottom-button">
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+        <div class="social-container">
+            <p class="social-text"><b>SOCIAL</b></p>
+            <a href="#" id="social-faceb-button"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" id="social-twitter-button"><i class="fab fa-twitter"></i></a>
+            <a href="#" id="social-ins-button"><i class="fab fa-instagram"></i></a>
+            <a href="#" id="social-youtube-button"><i class="fab fa-youtube"></i></a>
+            <a href="#" id="social-pin-button"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" id="social-letter-button">
+                <i class="fas fa-mail-bulk"></i>
+                <div class="social-letter-hover">
+                    <p><b><u>newsletter sign-up</u></b></p>
+                </div>
+            </a>
+        </div>
+        <!-- recently viewed top -->
+        <div class="top-recently-container">
+            <div class="top-recently-button-1">
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+            <p class="top-recently-text"><b>RECENTLR</b><b> VIEWED</b></p>
+            <div class="top-recently-button">
+                <button id="top-recently-top" class="top-recently-top-button">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+            <div class="top-recently-viewed-group">
+                <div id="imaget-1" class="top-recently-image">
+                    <img src="assets/images/top-recently/top-1.jpg" alt="">
+                    <div class="top-recently-image-hover">
+                        <a href="#"><b>Donatallo</b></a><br>
+                        <a href="#"><b>Loremous saliduar a cos...</b></a><br>
+                        <a href="#">from</a><a href="#"><b> $86.00</b></a>
+                        <button class="button button-recently">SELECT OPTIONS</button>
+                    </div>
+                </div>
+                <div id="imaget-2" class="top-recently-image"><img src="assets/images/top-recently/top-2.jpg" alt="" />
+                </div>
+                <div id="imaget-3" class="top-recently-image"><img src="assets/images/top-recently/top-2.jpg" alt="" />
+                </div>
+                <div id="imaget-4" class="top-recently-image"><img src="assets/images/top-recently/top-1.jpg" alt="" />
+                </div>
+            </div>
+            <div class="top-recently-button">
+                <button id="top-recently-bottom" class="top-recently-bottom-button">
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+            <div class="top-recently-button-n">
+                <button class="top-recently-top-button">
+                    <i class="fas fa-arrow-up"></i> <b>Top</b>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="content">
+
+        <!-- Large banner -->
+        <div id="banner" class="large-banner">
+            <div class="mySlides fade">
+                <img src="assets/images/banner/banner1.jpg" style="width:100%" alt="">
+                <div class="banner1-text-content">
+                    <p class="banner1-text-line1">Cosmopolis</p>
+                    <div class="line1"></div>
+                    <p class="banner1-text-line2">Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo
+                        lacus meleifend menean diverra
+                        loremous</p><br>
+                    <button class="button button-black button-responsive1">&emsp;SHOP NOW&emsp;</button>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/images/banner/banner2.jpg" style="width:100%" alt="">
+                <div class="banner2-text-content">
+                    <img src="assets/images/banner/banner2-sale.jpg" style="width:100%; padding-bottom: 5%;" alt="">
+                    <button class="button button-nocolor button-responsive1"> &emsp;SHOP NOW&emsp;</button>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/images/banner/banner3.jpg" style="width:100%" alt="">
+                <div class="banner3-text-content">
+                    <p class="banner1-text-line1">Loremous</p>
+                    <div class="line1"></div>
+                    <p class="banner3-text-line2">Quisquemos sodales suscipit tortor ditaemcos condimentum lacus
+                        meleifend menean diverra
+                        lorem comodous</p><br>
+                    <button class="button button-black button-responsive1">&emsp;SHOP THE COLLECTION&emsp;</button>
+                </div>
+            </div>
+
+            <a href="#" id="pre-btn" class="prev" onclick="plusSlides(-1)">❮</a>
+            <a href="#" id="next-btn" class="next" onclick="plusSlides(1)">❯</a>
+            <br>
+            <div id="banner-dot" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <!-- Sub banner -->
+        <div class="sub-banner">
+            <div class="item" style="background-image: url('./assets/images/sub-banner/item1.jpg');">
+                <p class="item-text">EDITOR'S PICK</p>
+                <div class="overlay pink-overlay"></div>
+            </div>
+            <div class="item" style="background-image: url('./assets/images/sub-banner/item2.jpg');">
+                <p class="item-text">SHOES</p>
+                <div class="overlay blue-overlay"></div>
+            </div>
+            <div class="item" style="background-image: url('./assets/images/sub-banner/item3.jpg');">
+                <p class="item-text">ACCESSORIES</p>
+                <div class="overlay green-overlay"></div>
+            </div>
+        </div>
+
+        <!-- New-products -->
+        <div class="new-products">
+            <div class="new-product-header">
+                <hr class="new-product-header-hr-left" />
+                <span class="new-product-header-text">
+                    NEW ARRIVALS
+                </span>
+                <hr class="new-product-header-hr-right" />
+            </div>
+            <a href="#" class="new-p-a">View all</a>
+
+            <div class="product-container">
+                <!-- div 1 -->
+                <div class="product-card">
+                    <div class="image-container">
+                        <button class="button product-button-like"><i class="far fa-heart"></i></button>
+                        <div class="sub-eye  sub-eye-1"><i class="fab fa-eye"></i></div>
+                        <img src="./assets/images/new-product/product-1.jpg" class="card-img" alt="">
+
+                        <div id="addtocart-1" class="add-to-cart-bg">
+                            <button class="button button-white border-black add-to-cart w-75"><b>ADD TO
+                                    CART</b></button>
+                        </div>
+
+                        <div class="sub-div sub-1">
+
+                            <div class="close-sub">
+                                <i id="close-sub-btn-1" class="fa fa-times cursor"></i>
+                            </div>
+                            <p><b>Size:</b> XS</p>
+                            <div class="product-size">
+                                <a href="#" class="cursor-bt">XS</a>
+                                <a href="#" class="cursor-bt">S</a>
+                                <a href="#" class="cursor-bt">M</a>
+                                <a href="#" class="cursor-bt">L</a>
+                                <a href="#" class="cursor-bt">XL</a>
+                                <a href="#" class="cursor-bt">XX</a>
+                            </div>
+                            <button id="subtocart-1" class="button button-black w-100">
+                                <span><b>SUBMIT</b></span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="product-name">SODLING</p>
+                    <p class="descript">Naminos Dementus A Milance - Pattern</p>
+                    <p class="price">$86.00 - $99.00</p>
+                    <div class="color-group">
+                        <div class="color-circle cursor" style="background-color: #31318d;"></div>
+                        <div class="color-circle cursor" style="background-color: rgb(31, 30, 30);"></div>
+                        <div class="color-circle cursor" style="background-color: rgb(208, 208, 208);"></div>
+                    </div>
+                </div>
+                <!-- div 2 -->
+                <div class="product-card">
+                    <div class="image-container">
+                        <button class="button product-button-like"><i class="far fa-heart"></i></button>
+                        <div class="sub-eye sub-eye-2"><i class="fas fa-eye"></i></div>
+                        <img src="./assets/images/new-product/product-2.jpg" class="card-img" alt="">
+
+                        <div id="addtocart-2" class="add-to-cart-bg">
+                            <button class="button button-white border-black add-to-cart w-75"><b>ADD TO
+                                    CART</b></button>
+                        </div>
+
+                        <div class="sub-div sub-2">
+                            <div class="close-sub">
+                                <i id="close-sub-btn-2" class="fa fa-times cursor"></i>
+                            </div>
+                            <p><b>Size:</b> XS</p>
+                            <div class="product-size">
+                                <a href="#" class="cursor-bt">XS</a>
+                                <a href="#" class="cursor-bt">S</a>
+                                <a href="#" class="cursor-bt">M</a>
+                                <a href="#" class="cursor-bt">L</a>
+                                <a href="#" class="cursor-bt">XL</a>
+                                <a href="#" class="cursor-bt">XX</a>
+                            </div>
+                            <button id="subtocart-2" class="button button-black w-100">
+                                <span><b>SUBMIT</b></span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="product-name">TOMORROW</p>
+                    <p class="descript">Dinterdum Pretium Condimento - Pattern</p>
+                    <p class="price">$139.00 - $189.00</p>
+                    <div class="color-group">
+                        <div class="color-circle cursor" style="background-color: black;"></div>
+                        <div class="color-circle cursor" style="background-color: rgb(208, 208, 208);"></div>
+                        <div class="color-circle cursor" style="background-color: #31318d;"></div>
+                        <div class="color-circle cursor" style="background-color: #16b48d;"></div>
+                        <div class="color-circle cursor" style="background-color: #fff648;"></div>
+                    </div>
+                </div>
+                <!-- div 3 -->
+                <div class="product-card">
+                    <div class="image-container">
+                        <button class="button product-button-like"><i class="far fa-heart"></i></button>
+                        <div class="sub-eye sub-eye-1"><i class="fas fa-eye"></i></div>
+                        <img src="./assets/images/new-product/product-3.jpg" class="card-img" alt="">
+
+                        <div id="addtocart-3" class="add-to-cart-bg">
+                            <button class="button button-white border-black add-to-cart w-75"><b>ADD TO
+                                    CART</b></button>
+                        </div>
+
+                        <div class="sub-div sub-3">
+                            <div class="close-sub">
+                                <i id="close-sub-btn-3" class="fa fa-times cursor"></i>
+                            </div>
+                            <p><b>Size:</b> XS</p>
+                            <div class="product-size">
+                                <a href="#" class="cursor-bt">XS</a>
+                                <a href="#" class="cursor-bt">S</a>
+                                <a href="#" class="cursor-bt">M</a>
+                                <a href="#" class="cursor-bt">L</a>
+                                <a href="#" class="cursor-bt">XL</a>
+                                <a href="#" class="cursor-bt">XX</a>
+                            </div>
+                            <button id="subtocart-3" class="button button-black w-100">
+                                <span><b>SUBMIT</b></span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="product-name">PAUL SMITH</p>
+                    <p class="descript">&ensp;Magnis Darturien Metro Lacinis - Black&ensp;</p>
+                    <p class="price">$86.00</p>
+                    <div class="color-group">
+                        <div class="color-circle cursor" style="background-color: white;"></div>
+                    </div>
+                </div>
+                <!-- div 4 -->
+                <div class="product-card">
+                    <div class="image-container">
+                        <button class="button product-button-like"><i class="far fa-heart"></i></button>
+                        <div class="sub-eye  sub-eye-1"><i class="fas fa-eye"></i></div>
+                        <img src="./assets/images/new-product/product-4.jpg" class="card-img" alt="">
+
+                        <div id="addtocart-4" class="add-to-cart-bg">
+                            <button class="button button-white border-black add-to-cart w-75"><b>ADD TO
+                                    CART</b></button>
+                        </div>
+
+                        <div class="sub-div sub-4">
+                            <div class="close-sub">
+                                <i id="close-sub-btn-4" class="fa fa-times cursor"></i>
+                            </div>
+                            <p><b>Size:</b> XS</p>
+                            <div class="product-size">
+                                <a href="#" class="cursor-bt">XS</a>
+                                <a href="#" class="cursor-bt">S</a>
+                                <a href="#" class="cursor-bt">M</a>
+                                <a href="#" class="cursor-bt">L</a>
+                                <a href="#" class="cursor-bt">XL</a>
+                                <a href="#" class="cursor-bt">XX</a>
+                            </div>
+                            <button id="subtocart-4" class="button button-black w-100">
+                                <span><b>SUBMIT</b></span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="product-name">DONATELLO</p>
+                    <p class="descript">Loremous Saliduar A Cosmopolito - Pattern</p>
+                    <p class="price">$86.00 - $99.00</p>
+                    <div class="color-group">
+                        <div class="color-circle cursor" style="background-color: rgb(31, 30, 30);"></div>
+                        <div class="color-circle cursor" style="background-color: rgb(208, 208, 208);"></div>
+                        <div class="color-circle cursor" style="background-color: #16b48d;"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="button button-white border-black w-25"><b>SHOW MORE</b></div>
+        </div>
+
+        <!-- Instagram -->
+        <div class="instagram">
+            <div class="instagram-header-text">
+                <p class="ins-header-text">
+                    <i class="fab fa-instagram"></i>
+                    #Ella on instagram
+                </p>
+                <p>Phasellus lorem malesuasa lihula polvinar commodo maecenas</p>
+            </div>
+            <button id="ins-prev" class="ins-prev-button">❮</button>
+            <button id="ins-next" class="ins-next-button">❯</button>
+            <div class="ins-image-group">
+                <img class="ins-image" src="assets/images/instagram/ins-1.jpg" alt="">
+                <img class="ins-image" src="assets/images/instagram/ins-2.jpg" alt="">
+                <img class="ins-image" src="assets/images/instagram/ins-3.jpg" alt="">
+                <img class="ins-image" src="assets/images/instagram/ins-4.jpg" alt="">
+                <img class="ins-image" src="assets/images/instagram/ins-5.jpg" alt="">
+                <img class="ins-image" src="assets/images/instagram/ins-5.jpg" alt="">
+            </div>
+            <button class="button button-black w-20">VIEW GALLERY</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div>
+                <h3>SHOP</h3>
+                <p>New in</p>
+                <p>Women</p>
+                <p>Men</p>
+                <p>Shoes</p>
+                <p>Bags & Accessories</p>
+                <p>Top Brands</p>
+                <p>Sale & Speacial Offers</p>
+                <p>Lookbook</p>
+            </div>
+            <div>
+                <h3>Information</h3>
+                <p>About</p>
+                <p>Customer Service </p>
+                <p>Reward Program</p>
+                <p>Shipping & Returns</p>
+                <p>Privacy Policy</p>
+                <p>Temp & Conditions</p>
+                <p>Blog</p>
+            </div>
+            <div>
+                <h3>Customer Service</h3>
+                <p>Search Terms </p>
+                <p>Advanced Search</p>
+                <p>Orders and Returns </p>
+                <p>Contact Us </p>
+                <p>Theme FAQs</p>
+                <p>Consultant</p>
+                <p>Store Locations</p>
+            </div>
+            <div>
+                <h3>Newsletter Sign Up</h3>
+                <p>Sign up for exclusive updates, new arrivals & insider only discounts</p>
+                <div class="footer-top-4-group">
+                    <input class="input input-black" placeholder="Email Address" />
+                    <button class="button button-white w-100">
+                        <span><b>SUBMIT</b></span>
+                    </button>
+                </div>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-snapchat-ghost"></i>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-hr" />
+        <div class="footer-bottom">
+            <div>
+                <p>&#169; 2014 Drz Demo. All Rights Reserved. Powered by Shopify. tramdangbao1010@gmail.com</p>
+            </div>
+            <div></div>
+            <div class="footer-bottom-right">
+                <img class="footer-img" src="assets/images/footer/visa.jpg" alt="">
+                <img class="footer-img" src="assets/images/footer/mastercard.jpg" alt="">
+                <img class="footer-img" src="assets/images/footer/amex.jpg" alt="">
+                <img class="footer-img" src="assets/images/footer/discover.jpg" alt="">
+                <img class="footer-img" src="assets/images/footer/cirrus.jpg" alt="">
+                <img class="footer-img" src="assets/images/footer/paypal.jpg" alt="">
+                <img class="footer-img" src="assets/images/footer/westornUnion.jpg" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/menuToggle.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/instagram.js"></script>"
+    <script src="js/login.js"></script>
+    <script src="js/sideCart.js"></script>
+    <script src="js/new-product.js"></script>
+    <script src="js/side-bar.js"></script>
+</body>
+
+
+</html>

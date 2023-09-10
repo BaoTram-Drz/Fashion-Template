@@ -1,0 +1,228 @@
+/* ----------Slide---------- */
+.large-banner {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    z-index: 0;
+  }
+.mySlides {display: none}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    margin: auto 8%;
+    width: 72px;
+    height: 72px;
+    color: #717171;
+    padding: 4px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    border: 1px solid #717171;
+    border-radius: 50px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+.next {
+    right: 0;
+}
+.prev:hover, .next:hover {
+    background-color: #717171;
+    color: white;
+}
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #717171;
+    border: 1px solid #717171;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    transform: translateY(-70px);
+}
+  
+.active, .dot:hover {
+    background-color: white;
+}
+.prev, 
+.next,
+.dot {
+  opacity: 1;
+}
+.large-banner:hover .prev,
+.large-banner:hover .next,  
+.large-banner:hover .dot {
+  opacity: 1;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+@media (max-width: 767px) {
+    .prev, .next {
+        top: 30%;
+        margin: auto 5%;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .dot {
+        height: 6px;
+        width: 6px;
+        margin: 0 2px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .prev, .next {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+} 
+
+
+/* banner */
+.banner1-text-content {
+    position: absolute;
+    width: 30%;
+    margin-left: 15% ;
+    bottom: 200px;
+    padding: 8px 12px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.banner1-text-line1{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+}
+.banner1-text-line{
+    display: block;
+}
+.line1 {
+    margin: 20px auto; 
+    width: 30px;
+    height: 3px;
+    background: #000;
+}
+
+.banner2-text-content {
+    position: absolute;
+    width: 30%;
+    margin-left: 35%;
+    top: 30%;
+    bottom: 20%;
+    text-align: center;
+}
+
+.banner3-text-content {
+    position: absolute;
+    width: 30%;
+    margin-right: 15% ;
+    margin-left: 50%;
+    bottom: 200px;
+    padding: 8px 12px;
+    font-size: 15px;
+    text-align: center;
+}
+.banner3-text-line2{
+    font-weight: 500;
+}
+
+.line2 {
+    margin: 20px auto; 
+    width: 30px;
+    height: 3px;
+    background: #000;
+}
+
+.banner2-text-hr{
+    color: white;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .banner1-text-content {
+        width: 50%;
+        margin-left: 5% ;
+        bottom: 30%;
+        padding: 4px 6px;
+    }
+    .banner1-text-line1{
+        font-size: 14px;
+    }
+    .banner1-text-line2{
+        display: none;
+    }
+    .line1 {
+        margin: 5px auto; 
+        width: 10px;
+        height: 1px;
+    }
+    .banner2-text-content {
+        width: 30%;
+        margin-left: 35%;
+        top: 20%;
+        bottom: 20%;
+    }
+    .banner3-text-content {
+        width: 50%;
+        margin-left: 45% ;
+        margin-right: 5%;
+        bottom: 30%;
+        padding: 4px 6px;
+        font-size: 4px;
+    }
+    .banner3-text-line2{
+        display: none;
+    }
+}
+  
+  /* Tablet */  
+@media (min-width: 768px) and (max-width: 1023px){
+    .banner1-text-content {
+        width: 40%;
+        margin-left: 10% ;
+        bottom: 25%;
+    }
+    .banner1-text-line1{
+        font-size: 28px;
+    }
+
+    .line1 {
+        margin: 10px auto; 
+        width: 20px;
+        height: 2px;
+    }
+    .banner2-text-content {
+        width: 30%;
+        margin-left: 35%;
+        top: 20%;
+        bottom: 20%;
+    }
+    .banner3-text-content {
+        width: 40%;
+        margin-left: 45% ;
+        margin-right: 5%;
+        bottom: 25%;
+    }
+} 
+
+#pre-btn, #next-btn, #banner-dot{
+    opacity: 0;
+}
